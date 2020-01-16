@@ -10,6 +10,8 @@
     <link rel="icon" type="image/png" href="{{url('backend/assets/images/favicon.png')}}"/>
 
     <title>UpAdmin - Site Control</title>
+
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
 
@@ -23,8 +25,8 @@
                 <h1>Login</h1>
             </header>
 
-            <form name="login" action="{{route('admin.login.do')}}" method="post" autocomplete="off">"|
-                @csrf
+            <form name="login" action="{{route('admin.login.do')}}" method="post" autocomplete="off">
+
                 <label>
                     <span class="field icon-envelope">E-mail:</span>
                     <input type="email" name="email" placeholder="Informe seu e-mail" required/>
@@ -32,7 +34,7 @@
 
                 <label>
                     <span class="field icon-unlock-alt">Senha:</span>
-                    <input type="password" name="password_check" placeholder="Informe sua senha" required/>
+                    <input type="password" name="password" placeholder="Informe sua senha" />
                 </label>
 
                 <button class="gradient gradient-orange radius icon-sign-in">Entrar</button>
@@ -57,6 +59,7 @@
 
 <script src="{{url('backend/assets/js/jquery.js')}}"></script>
 <script src="{{url('backend/assets/js/login.js')}}"></script>
+<script src="{{url('backend/assets/js/libs.js')}}"></script>
 <script src="{{url('backend/assets/js/scripts.js')}}"></script>
 
 </body>

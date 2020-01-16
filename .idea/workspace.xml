@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9722c9c8-2aa5-4c48-8891-f25e40aa559d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/backend/assets/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backend/assets/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/assets/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/assets/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/master/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/master/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
@@ -170,7 +173,8 @@
       <workItem from="1578958769299" duration="7216000" />
       <workItem from="1579041935237" duration="1844000" />
       <workItem from="1579043817956" duration="2815000" />
-      <workItem from="1579049611970" duration="803000" />
+      <workItem from="1579049611970" duration="2297000" />
+      <workItem from="1579109415890" duration="11926000" />
     </task>
     <servers />
   </component>
@@ -207,10 +211,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="914" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579030176925" />
-    <state x="314" y="444" key="NewPhpFileDialog" timestamp="1579031487048">
+    <state x="298" y="339" key="NewPhpClassDialog" timestamp="1579113206441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="314" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579031487048" />
+    <state x="298" y="339" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579113206441" />
+    <state x="314" y="444" key="NewPhpFileDialog" timestamp="1579127300588">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="314" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579127300588" />
     <state x="0" y="167" key="SettingsEditor" timestamp="1578869874111">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -223,10 +231,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="136" y="242" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579033122710" />
-    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1579046662603">
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1579129119345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579046662603" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579129119345" />
     <state x="202" y="436" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1578872163194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

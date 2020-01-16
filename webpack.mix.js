@@ -44,9 +44,9 @@ mix.sass('resources/views/admin/assets/scss/reset.scss', 'public/backend/assets/
     )
 
     .copyDirectory('resources/views/admin/assets/css/fonts', 'public/backend/assets/css/fonts')
-    .copyDirectory('resources/views/admin/assets/js/datatables', 'public/backend/assets/js/datatables')
-    .copyDirectory('resources/views/admin/assets/js/select2', 'public/backend/assets/js/select2')
-    .copyDirectory('resources/views/admin/assets/js/tinymce', 'public/backend/assets/js/tinymce')
+    /*.copyDirectory('resources/views/admin/assets/js/datatables', 'public/backend/assets/js/datatables')
+    .copyDirectory('resources/views/admin/assets/js/select21', 'public/backend/assets/js/select2')
+    .copyDirectory('resources/views/admin/assets/js/tinymce', 'public/backend/assets/js/tinymce')*/
 
     .copyDirectory('resources/views/admin/assets/images', 'public/backend/assets/images')
     .options({

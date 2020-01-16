@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="{{mix('backend/assets/css/libs.css')}}">
     <link rel="stylesheet" href="{{mix('backend/assets/css/boot.css')}}"/>
     <link rel="stylesheet" href="{{mix('backend/assets/css/style.css')}}"/>
+
+    @hasSection('css')
+        @yield('css')
+        @endif
+
     <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
 
     <title>UpAdmin - Site Control</title>
@@ -34,8 +39,8 @@
         </article>
 
         <ul class="dash_sidebar_nav">
-            <li class="dash_sidebar_nav_item active">
-                <a class="icon-tachometer" href="dashboard.php?app=dashboard/index">Dashboard</a>
+            <li class="dash_sidebar_nav_item {{ isActive('admin.home') }}">
+                <a class="icon-tachometer" href="{{route('admin.home')}}">Dashboard</a>
             </li>
             <li class="dash_sidebar_nav_item"><a class="icon-users" href="dashboard.php?app=users/index">Clientes</a>
                 <ul class="dash_sidebar_nav_submenu">
@@ -58,7 +63,8 @@
                 </ul>
             </li>
             <li class="dash_sidebar_nav_item"><a class="icon-reply" href="">Ver Site</a></li>
-            <li class="dash_sidebar_nav_item"><a class="icon-sign-out on_mobile" href="" target="_blank">Sair</a></li>
+            <li class="dash_sidebar_nav_item"><a class="icon-sign-out on_mobile" href="{{route('admin.logout')}}"
+                                                 target="_blank">Sair</a></li>
         </ul>
 
     </aside>
@@ -73,7 +79,7 @@
                         <i class="icon-imob text-orange"></i><a href="">Up<b>Admin</b></a>
                     </h1>
                     <div class="dash_userbar_box_bar no_mobile">
-                        <a class="text-red icon-sign-out" href="">Sair</a>
+                        <a class="text-red icon-sign-out" href="{{route('admin.logout')}}">Sair</a>
                     </div>
                 </div>
             </div>
@@ -89,6 +95,9 @@
 <script src="{{url('backend/assets/js/libs.js')}}"></script>
 <script src="{{url('backend/assets/js/scripts.js')}}"></script>
 
+@hasSection('js')
+    @yield('js')
+@endif
 
 </body>
 </html>
